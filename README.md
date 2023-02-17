@@ -3,9 +3,11 @@
 This mini application demonstrates the use of [Maya Checkout API](https://developers.maya.ph/docs/maya-checkout)
 in order to accept card and e-wallet payments.
 
-If you want to see the relevant code directly, see the code in [checkout.ts](src/services/checkout.ts)
+If you want to see the relevant integration code directly, see the file [checkout.ts](src/services/checkout.ts)
 
 This project was created with React (React Redux and Thunk) and TypeScript.
+
+Do not build your application on top of this demo.
 
 ---
 
@@ -17,7 +19,7 @@ This project was created with React (React Redux and Thunk) and TypeScript.
 2. Run `npm start` to start the application (App opens in http://localhost:3000 by default).  You need to provide your public API key as an environment variable REACT_APP_CHECKOUT_PUBLIC_API_KEY.
 
 Example: 
-> REACT_APP_CHECKOUT_PUBLIC_API_KEY='pk-...' npm start
+> REACT_APP_CHECKOUT_PUBLIC_API_KEY='pk-abcdefhij' npm start
 
 ## APIs Used
 1. [Maya Checkout](https://developers.maya.ph/docs/maya-checkout) - https://pg-sandbox.paymaya.com/checkout/v1/checkouts.
