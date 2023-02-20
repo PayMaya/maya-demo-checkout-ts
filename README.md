@@ -16,10 +16,31 @@ Do not build your application on top of this demo.
 
 ## How to Run the Application
 1. Run `npm install` to install all needed packages.
-2. Run `npm start` to start the application (App opens in http://localhost:3000 by default).  You need to provide your public API key as an environment variable REACT_APP_CHECKOUT_PUBLIC_API_KEY.
+2. Run `npm start` to start the application. (see next part for note on environment variables) 
 
 Example: 
 > REACT_APP_CHECKOUT_PUBLIC_API_KEY='pk-abcdefhij' npm start
+
+## Environment variables
+You can set these variables in your environment, or when running the application, or in a `.env` file in the root directory.
+
+| env variable                      | description                                 | default               |
+|-----------------------------------|---------------------------------------------|-----------------------|
+| REACT_APP_CHECKOUT_PUBLIC_API_KEY | (required) public api key                   |                       |
+| REACT_APP_CHECKOUT_SECRET_API_KEY | secret api key (not needed for this demo)   |                       |
+| REACT_APP_HOST_URL                | host url of the app, used for redirect urls | http://localhost:3000 |
+| REACT_APP_PATH_PREFIX             | path prefix, used for redirect urls         | /                     |
+| PORT                              | port that the app listens to                | 3000                  |
+
+### Using a .env file
+You can create a `.env` file in the root folder with values.
+
+Example
+```ini
+REACT_APP_CHECKOUT_PUBLIC_API_KEY=pk-gjldkfjgkldfjgljdfglawas
+REACT_APP_CHECKOUT_SECRET_API_KEY=sk-sjsdfhdsjfhsjkldfsdfhsdf
+```
+
 
 ## APIs Used
 1. [Maya Checkout](https://developers.maya.ph/docs/maya-checkout) - https://pg-sandbox.paymaya.com/checkout/v1/checkouts.
