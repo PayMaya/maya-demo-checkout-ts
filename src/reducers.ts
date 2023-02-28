@@ -48,7 +48,7 @@ const defaultUser: User = {
   lastName: 'Forger',
   email: 'anyaforger@test.com'
 }
-const currentUser = (state: User = defaultUser, action: CartAction): User => {
+const currentUser = (state: User = defaultUser, action: any): User => {
   return state
 }
 
