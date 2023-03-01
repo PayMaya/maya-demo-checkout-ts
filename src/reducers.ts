@@ -44,9 +44,9 @@ const cart = (state: Cart = initCart, action: CartAction): Cart => {
 }
 
 const defaultUser: User = {
-  firstName: 'Anya',
-  lastName: 'Forger',
-  email: 'anyaforger@test.com'
+  firstName: 'Jane',
+  lastName: 'Doe',
+  email: 'jane.done@maya.ph'
 }
 const currentUser = (state: User = defaultUser, action: any): User => {
   return state
