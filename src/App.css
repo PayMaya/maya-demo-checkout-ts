@@ -32,7 +32,7 @@ h2, h3 {
 }
 
 p {
-  font-family: "cerebri-sans"
+  font-family: "cerebri-sans", sans-serif;
 }
 
 .title-section {
