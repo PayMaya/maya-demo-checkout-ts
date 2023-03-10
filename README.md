@@ -19,10 +19,10 @@ Do not build your application on top of this demo.
 2. Run `npm start` to start the application. (see next part for note on environment variables) 
 
 Example: 
-> REACT_APP_CHECKOUT_PUBLIC_API_KEY='pk-abcdefhij' npm start
+> npm start
 
 ## Environment variables
-You can set these variables in your environment, or when running the application, or in a `.env` file in the root directory.
+You can set these variables in your environment, or in a `.env` file in the root directory.
 
 | env variable                      | description                                 | default               |
 |-----------------------------------|---------------------------------------------|-----------------------|
@@ -32,14 +32,14 @@ You can set these variables in your environment, or when running the application
 | REACT_APP_PATH_PREFIX             | path prefix, used for redirect urls         | /                     |
 | PORT                              | port that the app listens to                | 3000                  |
 
-### Using a .env file
-You can create a `.env` file in the root folder with values.
-
 Example
 ```ini
 REACT_APP_CHECKOUT_PUBLIC_API_KEY=pk-gjldkfjgkldfjgljdfglawas
 REACT_APP_CHECKOUT_SECRET_API_KEY=sk-sjsdfhdsjfhsjkldfsdfhsdf
 ```
+
+### Secure your API keys
+Take note to not make your secret api key visible in your web/fronend environment.  It is available in this demo for demonstration purposes only, and you are expected to perform API calls using the secret api key from your application's backend.
 
 
 ## APIs Used
